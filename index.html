@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Bastic - Learn, Build & Collaborate</title>
+
+    <!-- SEO & Social -->
+    <meta name="title" content="Tech Bastic - Learn, Build & Collaborate">
+    <meta name="description" content="An open-source community helping you to become a self-taught developer!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://techbastic.github.io/">
+    <meta property="og:title" content="Tech Bastic - Learn, Build & Collaborate">
+    <meta property="og:description"
+        content="Join our open-source community helping you to become a self-taught developer!">
+    <meta property="og:image" content="assets/cover.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tech Bastic - Learn, Build & Collaborate">
+    <meta name="twitter:description" content="An open-source community helping you to become a self-taught developer!">
+    <meta name="twitter:image" content="assets/cover.png">
+    <link rel="canonical" href="https://techbastic.github.io/" />
+
+    <!-- Favicon & Fonts -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="text-neutral-800 relative bg-blue-600/5">
+    <!-- Navbar -->
+    <nav class="fixed top-4 left-1/2 -translate-x-1/2 z-50" role="navigation" aria-label="Main Navigation">
+        <div
+            class="max-w-fit mx-auto px-6 py-3 rounded-xl bg-white/80 backdrop-blur-md shadow-md border border-white/30 flex items-center justify-between gap-10">
+            <div class="flex items-center space-x-2">
+                <div class="bg-blue-600 text-white rounded-lg p-1">
+                    <i data-lucide="code" class="w-4 h-4" aria-hidden="true"></i>
+                </div>
+                <span class="text-lg font-bold text-neutral-800">Tech Bastic</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#" class="text-neutral-600 hover:text-blue-600 font-semibold transition duration-200">About</a>
+                <a href="#"
+                    class="text-neutral-600 hover:text-blue-600 font-semibold transition duration-200">Resources</a>
+                <a href="#"
+                    class="text-neutral-600 hover:text-blue-600 font-semibold transition duration-200">Community</a>
+                <a href="#" class="text-neutral-600 hover:text-blue-600 font-semibold transition duration-200">Blog</a>
+            </div>
+            <button id="hamburgerBtn" class="md:hidden text-neutral-700 hover:text-blue-600 transition"
+                aria-label="Open menu">
+                <i data-lucide="menu" class="w-5 h-5"></i>
+            </button>
+        </div>
+        <div id="mobileMenu"
+            class="flex-col md:hidden mt-2 px-6 py-3 rounded-xl bg-white/80 backdrop-blur-md border border-white/30 shadow text-sm space-y-2 hidden">
+            <a href="#" class="text-neutral-600 hover:text-blue-600 font-medium">About</a>
+            <a href="#" class="text-neutral-600 hover:text-blue-600 font-medium">Resources</a>
+            <a href="#" class="text-neutral-600 hover:text-blue-600 font-medium">Community</a>
+            <a href="#" class="text-neutral-600 hover:text-blue-600 font-medium">Blog</a>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <main class="px-4" role="main">
+        <div class="max-w-4xl mx-auto relative z-10 text-center mt-32">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight relative h-16 overflow-hidden">
+                <span id="animatedHeading" aria-live="polite"></span>
+            </h1>
+            <p class="text-lg md:text-2xl text-neutral-500 mb-12 max-w-2xl mx-auto leading-relaxed">
+                An open-source community helping you to become a self-taught developer!
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://discord.com/invite/MSRnjkHcxK" target="_blank" rel="noopener noreferrer"
+                    class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition duration-200 flex items-center space-x-2 shadow">
+                    <i data-lucide="globe" class="w-5 h-5"></i>
+                    <span>Join Community</span>
+                </a>
+                <a href="https://github.com/techbastic" target="_blank" rel="noopener noreferrer"
+                    class="bg-white border border-neutral-300 hover:bg-neutral-100 text-neutral-700 px-8 py-4 rounded-lg font-semibold transition duration-200 flex items-center space-x-2 shadow">
+                    <i data-lucide="github" class="w-5 h-5"></i>
+                    <span>Explore GitHub</span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full pb-6" role="contentinfo">
+        <div
+            class="max-w-fit mx-auto px-6 py-3 rounded-xl bg-white/80 backdrop-blur-md shadow-md border border-white/30 flex justify-center space-x-6">
+            <a href="https://github.com/techbastic" target="_blank" aria-label="GitHub"
+                class="text-blue-600 hover:text-blue-700 transition transform hover:scale-110">
+                <i data-lucide="github" class="w-5 h-5"></i>
+            </a>
+            <a href="https://x.com/techbastic" target="_blank" aria-label="Twitter/X"
+                class="text-blue-600 hover:text-blue-700 transition transform hover:scale-110">
+                <i data-lucide="twitter" class="w-5 h-5"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/tech-bastic/" target="_blank" aria-label="LinkedIn"
+                class="text-blue-600 hover:text-blue-700 transition transform hover:scale-110">
+                <i data-lucide="linkedin" class="w-5 h-5"></i>
+            </a>
+            <a href="https://www.youtube.com/@adisuyashgupta" target="_blank" aria-label="YouTube"
+                class="text-blue-600 hover:text-blue-700 transition transform hover:scale-110">
+                <i data-lucide="youtube" class="w-5 h-5"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="js/script.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Tech Bastic",
+      "url": "https://techbastic.github.io/",
+      "logo": "assets/cover.png",
+      "description": "An open-source community helping you to become a self-taught developer!",
+      "sameAs": [
+        "https://github.com/techbastic",
+        "https://x.com/techbastic",
+        "https://www.linkedin.com/company/tech-bastic/",
+        "https://www.youtube.com/@adisuyashgupta"
+      ]
+    }
+  </script>
+</body>
+
+</html>

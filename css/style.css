@@ -1,0 +1,90 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    background-color: white;
+    color: #1f2937;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+    position: relative;
+    overflow: hidden;
+}
+
+#mobileMenu {
+    display: none;
+}
+
+#mobileMenu.show {
+    display: flex;
+}
+
+#animatedHeading {
+    min-height: 3.5rem;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+    color: #1f2937;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    display: inline-block;
+    will-change: transform, opacity;
+}
+
+.fade-slide {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeUp 0.6s ease forwards;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-icon {
+    transition: transform 0.6s ease-in-out;
+}
+
+.fade-icon:hover {
+    transform: scale(1.05) rotate(5deg);
+}
+
+footer a i {
+    transition: transform 0.2s ease-in-out;
+}
+
+footer a:hover i {
+    transform: scale(1.1);
+}
+
+nav a {
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+nav a:hover {
+    color: #2563eb;
+    transform: translateY(-1px);
+}
+
+a {
+    text-decoration: none;
+}
